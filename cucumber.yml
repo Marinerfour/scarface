@@ -1,1 +1,2 @@
-default: --no-source --color --format pretty
+default: --no-source --color --format pretty -f html -o  evidencia.html
+#-f html -o  evidencia.html colocar depois do pretty para chamar evidencia 
