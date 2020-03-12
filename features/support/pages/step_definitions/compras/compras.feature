@@ -17,7 +17,16 @@ Funcionalidade: Compras
    E clicar em Proceed to checkout
    E clicar em pay by bank wire (order processing will be longer)
    E clicar em confirm my order
-   Entao o pedido estara completo
+ Entao o pedido estara completo
+
+   @compra1             
+   Cenario: Validar botao "Top Trends"
+     Dado que estou na Home 
+     Quando eu percorrer o site até as cinco imagens no final da página
+     E clicar em Top Trends
+   Entao você será direcionado para a página https://www.prestashop.com/pt
+
+
 
 
  

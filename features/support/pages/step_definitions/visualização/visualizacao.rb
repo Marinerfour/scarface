@@ -1,9 +1,3 @@
-Dado("que eu estou na Home ") do
-       @Estar_Na_Home = EstarNaHome.new
-       @Estar_Na_Home.load
-       expect(@Estar_Na_Home).to have_carousel
-end
-
 Quando("eu clicar no botão WOMEN") do
        @mlist = List.new 
        @mlist.women.click

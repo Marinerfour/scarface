@@ -17,12 +17,12 @@ Funcionalidade: validarList
           E clicar no X do primeiro item
           E clicar no nome Henry Sales
           E clicar em My wishlist       
-      Entao sera exibida a pagina com a lista de desejos
+     Entao sera exibida a pagina com a lista de desejos
 
-      Exemplos:
+     Exemplos:
 
-      | email                                               | senha       |
-      | henryericksales__henryericksales@gruposantin.com.br | GfJZePcpU4  |
+     | email                                               | senha       |
+     | henryericksales__henryericksales@gruposantin.com.br | GfJZePcpU4  |
 
 
 

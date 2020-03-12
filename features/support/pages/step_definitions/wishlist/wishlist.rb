@@ -8,16 +8,6 @@ Quando("eu clicar em Sign in") do
         find(:xpath, '//*[@id="header"]/div[2]/div/div/nav/div[1]/a').click
  end
 
-Quando("preencher o campo ALREADY REGISTRED com {string} e {string}") do |email, senha|
-        @meuLogin = Login.new 
-        @meuLogin.email.set email
-        @meuLogin.senha.set senha     
-end
-
-Quando("clicar no botao Sign in") do
-        @meuLogin.signIn.click
-end
-
 Quando("clicar no botao WOMEN") do
         @meuLogin.women.click 
 end     
@@ -44,5 +34,5 @@ Quando("clicar em My wishlist") do
 end
  
 Entao("sera exibida a pagina com a lista de desejos") do
-        expect(@Estar_Na_Home).to have_wishPage
+        expect(@Estar_Na_Home).to have_Pagewish
 end

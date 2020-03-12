@@ -2,6 +2,11 @@ class HomeOrderConfirmation < SitePrism::Page
   set_url 'http://automationpractice.com/index.php?controller=order-confirmation&id_cart=1643990&id_module=3&id_order=175378&key=f2006a1d996a8d32014ef894098f5414'
 end
 
+class PrestaShop < SitePrism::Page
+  set_url 'https://www.prestashop.com/pt'
+  element :btnPresta, :xpath, '//*[@id="reminder"]/div/div/div/div/div[2]/div/div/a'
+end
+
 class UtilCompras < SitePrism::Page 
  element :women1, :xpath, '//*[@id="block_top_menu"]/ul/li[1]/a'
  element :addCartFaded, :xpath, '//*[@id="center_column"]/ul/li[1]/div/div[2]/div[3]/a[1]/span'
@@ -13,4 +18,5 @@ class UtilCompras < SitePrism::Page
  element :bankwire, :xpath, '//*[@id="HOOK_PAYMENT"]/div[1]/div/p/a/span'
  element :confirmOrder, :xpath, '//*[@id="cart_navigation"]/button/span'
  element :completService, :xpath, '//*[@id="center_column"]/div'
+ element :toptrends, :xpath, '//*[@id="htmlcontent_home"]/ul/li[1]/a/img'
 end 
