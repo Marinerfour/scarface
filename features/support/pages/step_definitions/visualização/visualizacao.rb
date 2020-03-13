@@ -9,6 +9,7 @@ end
 
 Entao("Os produtos da página devem ficar em uma única lista um em baixo do outro.") do
        @Home_List = HomeList.new 
+       @Home_List.load
       expect(@mlist).to have_validList 
       expect(@mlist).to have_validList2
 end
